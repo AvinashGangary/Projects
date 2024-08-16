@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Marks Percentage Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: aliceblue;
+            width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table th,
+        .table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .delete-btn {
+            background-color: #f44336;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e0e0e0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exam Marks Percentage Calculator</h1>
+
+        <div class="input-group">
+            <label for="name">Enter your Name:</label>
+            <input type="text" id="name" value="A">
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject Name</th>
+                    <th>Scored Marks</th>
+                    <th>Total Marks</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" value="English"></td>
+                    <td><input type="number" value="98"></td>
+                    <td><input type="number" value="100"></td>
+                    <td><button class="delete-btn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="Hindi"></td>
+                    <td><input type="number" value="92"></td>
+                    <td><input type="number" value="100"></td>
+                    <td><button class="delete-btn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="Maths"></td>
+                    <td><input type="number" value="80"></td>
+                    <td><input type="number" value="100"></td>
+                    <td><button class="delete-btn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="Science"></td>
+                    <td><input type="number" value="78"></td>
+                    <td><input type="number" value="100"></td>
+                    <td><button class="delete-btn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="SST"></td>
+                    <td><input type="number" value="72"></td>
+                    <td><input type="number" value="100"></td>
+                    <td><button class="delete-btn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="PE"></td>
+                    <td><input type="number" value="70"></td>
+                    <td><input type="number" value="100"></td>
+                    <td><button class="delete-btn">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button>Add Subject</button>
+
+        <div class="result">
+            <p>Result of: A</p>
+            <p>Percentage: 81.67%</p>
+            <p>Total Scored: 490</p>
+            <p>Total Marks: 600</p>
+            <button>Calculate</button>
+        </div>
+
+        <div class="result">
+            <p>Percentage: 81.67%</p>
+        </div>
+    </div>
+</body>
+</html>
